@@ -48,3 +48,9 @@ Create a ".env" file and add contents like the following (using your own AlphaVa
 # this is the ".env" file:
 ALPHAVANTAGE_API_KEY="..."
 ```
+
+Run the stocks report:
+
+```sh
+python app/stocks.py
+```
