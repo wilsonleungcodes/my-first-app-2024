@@ -24,7 +24,7 @@ Todo: install packages
 Run the example script:
 
 ```sh
-python app/my_script.py
+python app/example.py
 ```
 
 
@@ -52,5 +52,5 @@ ALPHAVANTAGE_API_KEY="..."
 Run the stocks report:
 
 ```sh
-python app/stocks.py
+python app/stocks_report.py
 ```
