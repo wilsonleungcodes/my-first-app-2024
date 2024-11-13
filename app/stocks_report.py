@@ -2,16 +2,19 @@
 
 # LOCAL DEV (ENV VARS)
 
-import os
+# this is the app/stocks.py file...
 
-from dotenv import load_dotenv
+# LOCAL DEV (ENV VARS)
+
 from pandas import read_csv
 from plotly.express import line
 
 
-load_dotenv() # looks in the ".env" file for env vars
+from app.alpha_service import API_KEY
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
+#load_dotenv() # looks in the ".env" file for env vars
+
+#API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
 
 def fetch_stocks_csv(symbol):

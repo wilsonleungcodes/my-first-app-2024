@@ -62,3 +62,9 @@ Run tests:
 ```sh
 pytest
 ```
+
+#Running unemployment
+
+```sh
+python -m app.unemployment
+```
