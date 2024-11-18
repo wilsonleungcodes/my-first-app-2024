@@ -9,6 +9,7 @@
 from statistics import mean
 
 import requests
+
 from plotly.express import line
 
 
