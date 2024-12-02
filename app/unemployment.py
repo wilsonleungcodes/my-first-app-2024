@@ -12,15 +12,24 @@ import requests
 
 from plotly.express import line
 
-
 from app.alpha_service import API_KEY
 
 #load_dotenv() # looks in the ".env" file for env vars
 
 #API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
+def format_pct(my_number):
+    """Formats a percentage number like 3.6555554 as percent, rounded to two decimal places.
 
-def fetch_unemployment_json():
+    Params:
+        my_number (float): a percentage like 3.6555554
+
+    Returns (str) like '3.66%'
+    """
+    return f"{my_number:.2f}%"
+
+
+def fetch_unemployment_data():
 
     request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 
@@ -52,7 +61,7 @@ def fetch_unemployment_json():
 if __name__ == "__main__":
 
 
-    data = fetch_unemployment_json()
+    data = fetch_unemployment_data()
 
     # Challenge A
     #
